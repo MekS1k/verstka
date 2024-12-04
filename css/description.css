@@ -1,0 +1,84 @@
+/* второй блок */
+.description {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+    grid-template-rows: repeat(3, 25rem);
+}
+
+/* левый текст, заголовок и описание */
+.description__text {
+    width: 26rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.description__title {
+    color: #001049;
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 500;
+    max-width: 20rem;
+}
+
+.description__subtitle {
+    color: #2A3354;
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-width: 26rem;
+}
+
+
+/* блоки с svg-шками */
+.description__box {
+    width: 50.4rem;
+    max-height: 19rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 19rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(86, 133, 255, 0.15);
+    border-radius: 4rem;
+}
+
+.description__box--up {
+    position: relative;
+    left: 7rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.description__box--middle {
+    /* position: relative;
+    left: 0; */
+    justify-self: flex-end;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.description__box--down {
+    position: relative;
+    left: -10rem;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+
+/* текст который слева от svg-шек */
+.description__textblock {
+    color: #001049;
+    font-size: 2.4rem;
+    font-weight: 500;
+    width: 100%;
+    max-height: 5.8rem;
+    max-width: 23.5rem;
+    padding-left: 4rem;
+}
+
+/* параметры верхней svg-шки */
+.description__svg {
+    position: relative;
+    bottom: 20%;
+    width: 29.2rem;
+    height: 29.2rem;
+}
